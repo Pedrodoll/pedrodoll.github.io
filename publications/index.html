@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Doll</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body class="page-publications">
+    <header>
+        <!-- Google Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <h1> 
+        <a href="mailto:dollpedro@gmail.com"><span class="material-icons email-icon">mail</span></a>
+        <!-- <h1><span class="material-icons" style="font-size: 30px; vertical-align: middle;" >mail</span> -->
+        <a href="https://scholar.google.com/citations?user=7ISOo1oAAAAJ&hl=en" target="_blank"> <img src="icons/Google_Scholar_logo.svg" alt="Google Scholar Profile" class="scholar-icon"></a>
+        <a href="https://linkedin.com/in/dollpedro" target="_blank"> <img src="icons/LinkedIn_icon.svg" alt="LinkedIn Profile" class="scholar-icon"></a>
+        </h1>
+        <nav>
+          <a href="/index.html">About</a>
+          <a href="/my-story/index.html">My story</a>
+          <a href="CV-Pedro-Doll.pdf" target="_blank">CV</a>
+          <now> Publications </now>
+          <a id="theme-toggle" onclick="toggleTheme()">
+            <img id="theme-icon" src="icons/sun.svg" alt="Theme Icon" class="theme-icon" />
+          </a>
+        </nav>
+        <div class="progress-bar" id="progressBar"></div>
+    </header>
+
+  <!-- Navigation pane outside main -->
+  <aside class="publications-nav">
+    <h3>Jump to:</h3>
+    <nav>
+      <a href="#publication-1">Cosmogenic <sup>3</sup>He dating of 'a'ā lava flows</a>
+      <a href="#publication-2">Paleomagnetism refinement of lava flow eruption ages</a>
+      <a href="#publication-3">Magnitude of effusive eruptions and eruption rate variation</a>
+    </nav>
+  </aside>
+
+  <main>
+    <h2>Publications</h2>
+    
+    <!-- Publication section with fixed height -->
+    <div class="publication-section" id="publication-1">
+      <p><a href="https://gchron.copernicus.org/articles/6/365/2024/" target="_blank"><em>Cosmogenic <sup>3</sup>He chronology of postglacial lava flows at Mt Ruapehu, Aotearoa / New Zealand.</em> <strong>Pedro Doll</strong> <em>et. al</em>, 2024.</a> <em><a href="https://www.geochronology.net/" target="_blank">Geochronology</a></em></p>
+
+      <!-- Two-column layout -->
+      <div class="two-column">
+        <div class="left-column">
+          <p style="height: 20px;"></p>
+          <p>This manuscript is a large-scale study that presents surface exposure ages and derived eruption ages of mostly postglacial lava flows at Ruapehu using cosmogenic <sup>3</sup>He.
+            It represents the first large-scale application of cosmogenic <sup>3</sup>He as a dating tool for lava flows at stratovolcanoes, and particularly for 'a'ā lavas.
+            In this manuscript, I provided new eruption age constraints for 23 lava flows and compare the results with published chronological data, highlighting the value of cosmogenic nuclides exposure dating in refining recent eruptive chronologies at stratovolcanoes.</p>
+          <!-- Dynamic caption that changes with carousel -->
+          <p id="carousel-caption" class="carousel-caption"></p>
+        </div>
+        <div class="right-column">
+          <!-- Image Carousel -->
+          <div class="carousel">
+            <div class="carousel-images">
+        <img src="images/Cosmo-fp.png" alt="Image 1" class="carousel-image" />
+        <img src="images/cosmo-f2.jpg" alt="Image 2" class="carousel-image" />
+        <img src="images/cosmo-f3.png" alt="Image 3" class="carousel-image" />
+        <img src="images/cosmo-f5.png" alt="Image 4" class="carousel-image" />
+        <img src="images/cosmo-f6.png" alt="Image 5" class="carousel-image" />
+      </div>
+      
+      <!-- Navigation arrows -->
+      <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+      
+      <!-- Dots indicator -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+
+    <!-- Horizontal separator -->
+    <hr class="publication-separator">
+
+    <!-- Second Publication section -->
+    <div class="publication-section" id="publication-2">
+      <p><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GC011745" target="_blank"><em>Paleomagnetism-based chronology of Holocene lava flows at Mt Ruapehu, Aotearoa New Zealand.</em> <strong>Pedro Doll</strong> <em>et. al</em>, 2024.</a> <em><a href="https://agupubs.onlinelibrary.wiley.com/journal/15252027" target="_blank">Geochemistry, Geophysics, Geosystems</a></em></p>
+
+      <!-- Two-column layout -->
+      <div class="two-column">
+        <div class="left-column">
+          <p style="height: 0px;"></p>
+          <p>This paper presents chronological constraints for Holocene lava flows at two areas of Ruapehu based on paleomagnetic analyses and a relative stratigraphy of these lavas. We showed that a large flow field in the Whakapapa area (northwest Ruapehu) was formed during at least three distinct eruptive episodes between 10,600 and 7,350 years ago, following a catastrophic volcanic landslide at around 10,600 years ago. We also determined that the lavas present in the Whangaehu valley (east Ruapehu) erupted during at least two episodes between 4,600 and 1,000 years ago, the latter representing the youngest lavas known outside the summit area of Ruapehu. This research helps understand how Ruapehu was rebuilt after slope collapses, and the frequency of lava-forming eruptions.</p>
+          <!-- Dynamic caption that changes with carousel -->
+          <p id="carousel-caption-2" class="carousel-caption"></p>
+        </div>
+        <div class="right-column">
+          <!-- Image Carousel -->
+          <div class="carousel" id="carousel-2">
+            <div class="carousel-images">
+        <img src="images/Pmag-fp.png" alt="Image 1" class="carousel-image" />
+        <img src="images/pmag-f2.jpg" alt="Image 2" class="carousel-image" />
+        <img src="images/pmag-f3.jpg" alt="Image 3" class="carousel-image" />
+        <img src="images/pmag-f5-2.png" alt="Image 4" class="carousel-image" />
+        <img src="images/pmag-f7.jpg" alt="Image 5" class="carousel-image" />
+        <img src="images/pmag-f8.jpg" alt="Image 6" class="carousel-image" />
+      </div>
+      
+      <!-- Navigation arrows -->
+      <button class="carousel-btn prev" onclick="changeSlide2(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeSlide2(1)">&#10095;</button>
+      
+      <!-- Dots indicator -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide2(1)"></span>
+        <span class="dot" onclick="currentSlide2(2)"></span>
+        <span class="dot" onclick="currentSlide2(3)"></span>
+        <span class="dot" onclick="currentSlide2(4)"></span>
+        <span class="dot" onclick="currentSlide2(5)"></span>
+        <span class="dot" onclick="currentSlide2(6)"></span>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+
+    <!-- Horizontal separator -->
+    <hr class="publication-separator">
+
+    <!-- Third Publication section -->
+    <div class="publication-section" id="publication-3">
+      <p><a href="https://www.sciencedirect.com/science/article/pii/S0377027325001714?via%3Dihub" target="_blank"><em>Postglacial effusive activity at Mt Ruapehu, Aotearoa New Zealand: Lava flow volumes and eruptive rate</em> <strong>Pedro Doll</strong> <em>et. al</em>, 2025.</a> <em><a href="https://www.sciencedirect.com/journal/journal-of-volcanology-and-geothermal-research" target="_blank">Journal of Volcanology and Geothermal Research</a></em>.</p>
+
+      <!-- Two-column layout -->
+      <div class="two-column">
+        <div class="left-column">
+          <p style="height: 0px;"></p>
+          <p>This article provides new constraints on the magnitude of 52 lava flows that conform the postglacial constructive phase of Ruapehu (Whakapapa Formation). Using these and published data of pyroclastic deposits, we provide a cumulative erupted volume curve for the last 20 kyr at Ruapehu. Results indicate that postglacial effusive activity was, on average, less intense than both activity prior to the Last Glacial Maximum and the volcano’s long-term average. We also identified that the two Holocene flank collapses that affected Ruapehu’s summit area had a different effect on the plumbing and magmatic system; a larger Early Holocene collapse forced a change in eruptive style towards effusive eruptions, while the smaller Late Holocene collapse did not have a significant impact in the volcanic activity.</p>
+          <!-- Dynamic caption that changes with carousel -->
+          <p id="carousel-caption-3" class="carousel-caption"></p>
+        </div>
+        <div class="right-column">
+          <!-- Image Carousel -->
+          <div class="carousel" id="carousel-3">
+            <div class="carousel-images">
+        <img src="images/Vol-fp.png" alt="Image 1" class="carousel-image" />
+        <img src="images/vol-f8.png" alt="Image 2" class="carousel-image" />
+        <img src="images/vol-f9.png" alt="Image 3" class="carousel-image" />
+      </div>
+      
+      <!-- Navigation arrows -->
+      <button class="carousel-btn prev" onclick="changeSlide3(-1)">&#10094;</button>
+      <button class="carousel-btn next" onclick="changeSlide3(1)">&#10095;</button>
+      
+      <!-- Dots indicator -->
+      <div class="carousel-dots">
+        <span class="dot" onclick="currentSlide3(1)"></span>
+        <span class="dot" onclick="currentSlide3(2)"></span>
+        <span class="dot" onclick="currentSlide3(3)"></span>
+      </div>
+    </div>
+    </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <script src="script.js"></script>
+
+
+  <footer>
+    <p> Contact: <a href="mailto:dollpedro@gmail.com">dollpedro@gmail.com</a> | © Copyright 2026 Pedro Doll </p>
+  </footer>
+
+</body>
+</html>
