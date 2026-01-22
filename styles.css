@@ -2,36 +2,6 @@
 
   /* Custom font loading */
   
-  /* Cormorant Garamond */
-  @font-face {
-    font-family: 'Cormorant Garamond';
-    src: url('fonts/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Cormorant Garamond';
-    src: url('fonts/Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-  }
-
-  /* EB Garamond */
-  @font-face {
-    font-family: 'EB Garamond';
-    src: url('fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'EB Garamond';
-    src: url('fonts/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-  }
-
   /* Lora */
   @font-face {
     font-family: 'Lora';
@@ -47,66 +17,7 @@
     font-style: italic;
   }
 
-  /* Minerva Modern */
-  @font-face {
-    font-family: 'Minerva Modern';
-    src: url('fonts/Minerva_Modern/MinervaModern_Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Minerva Modern';
-    src: url('fonts/Minerva_Modern/MinervaModern_Bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Minerva Modern';
-    src: url('fonts/Minerva_Modern/MinervaModern_Italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: 'Minerva Modern';
-    src: url('fonts/Minerva_Modern/MinervaModern_Black.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
-  }
-
-  /* Playfair Display */
-  @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Playfair Display';
-    src: url('fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-  }
-
-  /* Source Serif 4 */
-  @font-face {
-    font-family: 'Source Serif 4';
-    src: url('fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Source Serif 4';
-    src: url('fonts/Source_Serif_4/SourceSerif4-Italic-VariableFont_opsz,wght.ttf') format('truetype');
-    font-weight: 100 900;
-    font-style: italic;
-  }
-  
-
+ 
   /* Theme color variables */
   body.dark-mode {
     --background-color: rgba(20, 20, 20, 0.8);
@@ -341,22 +252,30 @@ sup {
     flex-wrap: wrap; /* allows stacking on small screens */
   }
   
-  .left-column {
+  .right-column {
     flex: 0 0 40%; /* fixed max width at 60% */
     max-width: 40%;
+    margin-top: 0; /* Align with left column */
   }
   
-  .right-column {
+  .left-column {
     font-family: 'Lora', 'Open Sans', sans-serif;
     font-weight: 400; /* Normal */
     flex: 1; /* takes remaining space */
     min-width: 250px; /* ensures text doesn't shrink too much */
+    margin-top: 0; /* Align with right column */
+  }
+  
+  .left-column p:first-child {
+    margin-top: 0; /* Remove top margin from first paragraph */
   }
   
   .profile-image {
     width: 100%; /* fills its column */
     height: auto;
     border-radius: 8px;
+    display: block; /* Remove inline spacing */
+    margin-top: 0; /* Align with text */
   }
   
   /* Responsive: stack columns on small screens */
