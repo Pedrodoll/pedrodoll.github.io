@@ -253,8 +253,8 @@ sup {
   }
   
   .right-column {
-    flex: 0 0 40%; /* fixed max width at 60% */
-    max-width: 40%;
+    flex: 0 0 43%; /* fixed max width at 60% */
+    max-width: 50%;
     margin-top: 0; /* Align with left column */
   }
   
@@ -272,6 +272,7 @@ sup {
   
   .profile-image {
     width: 100%; /* fills its column */
+    max-width: 400px; /* Maximum width constraint */
     height: auto;
     border-radius: 8px;
     display: block; /* Remove inline spacing */
