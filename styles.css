@@ -252,13 +252,13 @@ sup {
     flex-wrap: wrap; /* allows stacking on small screens */
   }
   
-  .right-column {
-    flex: 0 0 43%; /* fixed max width at 60% */
-    max-width: 50%;
+  .left-column {
+    flex: 0 0 40%; /* fixed max width at 60% */
+    max-width: 40%;
     margin-top: 0; /* Align with left column */
   }
   
-  .left-column {
+  .right-column {
     font-family: 'Lora', 'Open Sans', sans-serif;
     font-weight: 400; /* Normal */
     flex: 1; /* takes remaining space */
@@ -266,7 +266,7 @@ sup {
     margin-top: 0; /* Align with right column */
   }
   
-  .left-column p:first-child {
+  .right-column p:first-child {
     margin-top: 0; /* Remove top margin from first paragraph */
   }
   
